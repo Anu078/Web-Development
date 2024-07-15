@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50.6m</title>
+    <style>
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container{
+            display: grid;
+            height: 400px;
+            width: 400px;
+            background-color: black;
+            grid-template-columns: 100px 230px 52px;
+            grid-template-rows: 150px 150px 40px;
+            gap: 9px;
+            box-shadow: 10px 10px 0px rgb(96, 96, 96);
+        }
+
+        .item{
+            background-color: white;
+        }
+
+        .blue1{
+            background-color: blue;
+            grid-row: span 2;
+        }
+
+        .white1, .white2{
+            background-color: #F0F1EC;
+
+        }
+
+        .red{
+            background-color: red;
+            /* grid-area: 1 / 2 / -2 / 4; */
+            grid-row: span 2;
+            grid-column: span 2;
+        }
+
+        .white3{
+            background-color: #F0F1EC;
+            grid-row: span 2;
+        }
+
+        .blue2{
+            background-color: blue;
+        }
+
+        .yellow{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item white1"></div>
+        <div class="item red"></div>
+        <div class="item white2"></div>
+        <div class="item blue1"></div>
+        <div class="item white3"></div>
+        <div class="item blue2"></div>
+        <div class="item yellow"></div>
+    </div>
+</body>
+</html>
